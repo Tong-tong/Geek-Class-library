@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>课程库</title>
+    <link rel="stylesheet" type="text/css" href="./css/class_Library.css">
+    <link rel="stylesheet" type="text/css" href="./css/page.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <!--[if IE]>
+<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="big-box">
+        <!-- 导航 -->
+        <header>
+            <div class="header-content">
+                <img src="jike-img/logo.png" alt="极客学院" class="header-content-img">
+                <nav>
+                    <ul class="nav-ul">
+                        <li>
+                            <a href="http://www.jikexueyuan.com/" style="rgb(53, 181, 88);" class="shouye">首页</a>
+                        </li>
+                        <li class="zhiyexueyuan">
+                            <a href="" class="title">职业学院</a>
+                            <i class="i-1"></i>
+                            <div class="zhiye-list">
+                                <h3>前端学院</h3>
+                                <a href="http://www.jikexueyuan.com/zhiye/web"><img src="jike-img/4_html5_9ab5f1c.png" alt="h5" />Web前端工程师</a>
+                                <h3>后端学院</h3>
+                                <a href="http://www.jikexueyuan.com/zhiye/python"><img src="jike-img/Python.png" alt="Python" />Python Web工程师
+                                </a>
+                                <a href="http://www.jikexueyuan.com/zhiye/go"><img src="jike-img/go.png" alt="go" />Go语言工程师</a>
+                                <h3>移动学院</h3>
+                                <a href="http://www.jikexueyuan.com/zhiye/ios"><img src="jike-img/2_iOS_5e77ff4.png" alt="ios" />iOS工程师</a>
+                            </div>
+                        </li>
+                        <li class="vip-kecheng">
+                            <a href="" class="title">会员课程</a> <i class="i-1"></i>
+                            <div class="vip">
+                                <a href="课程库.html">
+                                    <img src="jike-img/kechengku.png" alt="课程库">
+                                    <span class="vip-span1">课程库</span>
+                                    <span class="vip-span2">2500+</span>
+                                </a>
+                                <a href="http://ke.jikexueyuan.com/zhiye/">
+                                    <img src="jike-img/zhiyelujingtu.png" alt="">
+                                    <span class="vip-span1">职业路径图</span>
+                                    <span class="vip-span2">9</span>
+                                </a>
+                                <a href="http://www.jikexueyuan.com/path/">
+                                    <img src="jike-img/zhishitixi.png" alt=""><span class="vip-span1">知识体系图</span>
+                                    <span class="vip-span2">24</span>
+                                </a>
+                                <a href="http://ke.jikexueyuan.com/xilie/"><img src="jike-img/xiliekecheng.png" alt=""><span class="vip-span1">系列课程</span><span class="vip-span2">101</span></a>
+                                <a href="http://www.jikexueyuan.com/tag/">
+                                    <img src="jike-img/kechengbiaoqian.png" alt=""><span class="vip-span1">课程标签</span><span class="vip-span2">4000+</span>
+                                </a>
+                                <a href="http://www.jikexueyuan.com/vip/"><img src="jike-img/VIP.png" alt=""><span class="vip-span1">VIP会员购买</span><span class="vip-span2">30/月260/年</span></a>
+                            </div>
+                        </li>
+                        <li class="jike-home">
+                            <a href="" class="title">极客社区</a> <i class="i-1"></i>
+                            <div class="home">
+                                <a href="http://wenda.jikexueyuan.com/">
+                                    <img src="jike-img/jishuwenda.png" alt="技术问答">
+                                    <span class="home-span">技术问答</span>
+                                </a>
+                                <a href="http://wiki.jikexueyuan.com/">
+                                    <img src="jike-img/wiki.png" alt="">
+                                    <span class="home-span">wiki</span>
+                                </a>
+                                <a href="http://qun.jikexueyuan.com/">
+                                    <img src="jike-img/shequ.png" alt="">
+                                    <span class="home-span">社区</span>
+                                </a>
+                                <a href="http://download.jikexueyuan.com/">
+                                    <img src="jike-img/ziyuanxiazai.png" alt="">
+                                    <span class="home-span">资源下载</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="three-pic">
+                    <img class="sousuo" src="jike-img/search-icon.png" alt="搜索">
+                    <span class="hello"></span>
+                    <a href="" class="pingbanzhuanhuan"> <img class="zhuanhuan" src="jike-img/zhuanhuan.png" alt="">
+                        <div class="zh"><img src="jike-img/app.png" alt="app" width="137px" height="181px"></div>
+                    </a>
+                    <a href="" class="touxiang"><img src="jike-img/me.jpg" alt="头像"></a>
+                </div>
+                <div class="searchbox" id="searchbox">
+                    <i id="close-btn"><img class="close-icon" src="jike-img/pic/3.png"></i>
+                    <i id="search-btn"><img class="search-icon" src="jike-img/search-icon.png"></i>
+                    <input id="web_search" placeholder="搜索课程、问答或Wiki" />
+                    <div class="tagbox">
+                        <a href="#">Android</a>
+                        <a href="#">iOS</a>
+                        <a href="#">HTML5</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 中间内容 -->
+        <article>
+            <div class="article_content">
+                <!--  左导航 -->
+                <div class="left_nav">
+                    <div class="course">
+                        <p class="course_p">课程库</p>
+                        <ul class="course_ul">
+                            <div class="open_course">
+                              <!-- 移动开发 -->
+                                <div class="mobile_Development">
+                                    <p class="m1">应用开发</p>
+                                    <p class="m2">Android <span>|</span> iOS</p>
+                                    <p class="m1">游戏开发</p>
+                                    <p class="m2">Cocos<span>|</span>Unity3D <span>|</span> SpriteKit 2D <span>|</span> Unreal</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div> 
+                                <!-- 、前端开发 -->
+                                <div class="FE_Development">
+                                    <p class="m1">前端基础</p>
+                                    <p class="m2">HTML<span>|</span> CSS <span>|</span> JavaScript <span>|</span>HTML5 <span>|</span>CSS3<span>|</span>技术前瞻</p>
+                                    <p class="m1">前端进阶</p>
+                                    <p class="m2">Typescript<span>|</span>前端安全<span>|</span>项目实战</p>
+                                    <p class="m1">前端框架</p>
+                                    <p class="m2">jQuery<span>|</span>jQuery UI<span>|</span>jQuery Mobile<span>|</span>Ext JS<span>|</span>AngularJS
+                                        <br>
+                                        <br>ReactJS<span>|</span>Bootstrap<span>|</span>React Native<span>|</span>Backbone<span>|</span>Three.js
+                                        <br>
+                                        <br>MooTools<span>|</span>Compass</p>
+                                </div>
+                                <!-- 后端开发 -->
+                                <div class="back_Development">
+                                    <p class="m1">python</p>
+                                    <p class="m2">Python 基础<span>|</span>web2py<span>|</span>Django<span>|</span>Flask<span>|</span>GUI
+                                        <br>
+                                        <br>数据挖掘与分析</p>
+                                    <br>
+                                    <p class="m1">PHP</p>
+                                    <p class="m2">PHP 基础<span>|</span>YII<span>|</span>ThinkPHP<span>|</span>Laravel<span>|</span>WordPress<span>|</span>Phalcon
+                                        <br>
+                                        <br>Apache<span>|</span>Facebook Hack</p>
+                                    <br>
+                                    <p class="m1">Node.js</p>
+                                    <p class="m2">Node.js 基础<span>|</span>express<span>|</span>Meteor<span>|</span>Hexo</p>
+                                </div>
+                                <!-- 基础知识 -->
+                                <div class="basic_Knowledge">
+                                    <p class="m1">基础语言</p>
+                                    <p class="m2">C<span>|</span>C++<span>|</span>Swift<span>|</span>Objective-C<span>|</span>C#<span>|</span>Java<span>|</span>Perl<span>|</span>Shell<span>|</span>Qt
+                                        <br>Scala</p>
+                                    <br>
+                                    <p class="m1">游戏开发</p>
+                                    <p class="m2">Cocos<span>|</span>Unity3D <span>|</span> SpriteKit 2D <span>|</span> Unreal</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div>
+                                <!-- 云计算&大数据 -->
+                                <div class="big_Data">
+                                    <p class="m1">云计算</p>
+                                    <p class="m2"> OpenStack<span>|</span>Docker<span>|</span>CloudStack<span>|</span>Windows AzureIaaS</p>
+                                    <p class="m1">大数据</p>
+                                    <p class="m2">Hadoop<span>|</span>Storm<span>|</span>Hive<span>|</span>Flume<span>|</span>Kafka<span>|</span>信息检索<span>|</span>数据分析</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div>
+                                <!-- 智能硬件&物联网 -->
+                                <div class="Internet_Of_Things">
+                                    <p class="m1">前端基础</p>
+                                    <p class="m2">HTML<span>|</span> CSS <span>|</span> JavaScript <span>|</span>HTML5 <span>|</span>CSS3<span>|</span>技术前瞻</p>
+                                    <p class="m1">前端进阶</p>
+                                    <p class="m2">Typescript<span>|</span>前端安全<span>|</span>项目实战</p>
+                                    <p class="m1">前端框架</p>
+                                    <p class="m2">jQuery<span>|</span>jQuery UI<span>|</span>jQuery Mobile<span>|</span>Ext JS<span>|</span>AngularJS
+                                        <br>
+                                        <br>ReactJS<span>|</span>Bootstrap<span>|</span>React Native<span>|</span>Backbone<span>|</span>Three.js
+                                        <br>
+                                        <br>MooTools<span>|</span>Compass</p>
+                                </div>
+                                <!-- 数据库 -->
+                                <div class="dataBase">
+                                    <p class="m1">python</p>
+                                    <p class="m2">Python 基础<span>|</span>web2py<span>|</span>Django<span>|</span>Flask<span>|</span>GUI
+                                        <br>
+                                        <br>数据挖掘与分析</p>
+                                    <br>
+                                    <p class="m1">PHP</p>
+                                    <p class="m2">PHP 基础<span>|</span>YII<span>|</span>ThinkPHP<span>|</span>Laravel<span>|</span>WordPress<span>|</span>Phalcon
+                                        <br>
+                                        <br>Apache<span>|</span>Facebook Hack</p>
+                                    <br>
+                                    <p class="m1">Node.js</p>
+                                    <p class="m2">Node.js 基础<span>|</span>express<span>|</span>Meteor<span>|</span>Hexo</p>
+                                </div>
+                                <!-- 认证考试 -->
+                                <div class="test">
+                                    <p class="m1">基础语言</p>
+                                    <p class="m2">C<span>|</span>C++<span>|</span>Swift<span>|</span>Objective-C<span>|</span>C#<span>|</span>Java<span>|</span>Perl<span>|</span>Shell<span>|</span>Qt
+                                        <br>Scala</p>
+                                    <br>
+                                    <p class="m1">游戏开发</p>
+                                    <p class="m2">Cocos<span>|</span>Unity3D <span>|</span> SpriteKit 2D <span>|</span> Unreal</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div>
+                                <!--  企业IT -->
+                                <div class="IT">
+                                    <p class="m1">云计算</p>
+                                    <p class="m2"> OpenStack<span>|</span>Docker<span>|</span>CloudStack<span>|</span>Windows AzureIaaS</p>
+                                    <p class="m1">大数据</p>
+                                    <p class="m2">Hadoop<span>|</span>Storm<span>|</span>Hive<span>|</span>Flume<span>|</span>Kafka<span>|</span>信息检索<span>|</span>数据分析</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div>
+                                <!-- 设计&产品&测试 -->
+                                <div class="product">
+                                    <p class="m1">应用开发</p>
+                                    <p class="m2">Android <span>|</span> iOS</p>
+                                    <p class="m1">游戏开发</p>
+                                    <p class="m2">Cocos<span>|</span>Unity3D <span>|</span> SpriteKit 2D <span>|</span> Unreal</p>
+                                    <p class="m1">常用框架</p>
+                                    <p class="m2">Cordova <span>|</span> React Native</p>
+                                </div>
+                            </div>
+                            <li class="course_li_1"><span>移动开发</span></li>
+                            <li class="course_li_2"><span>前端开发</span></li>
+                            <li class="course_li_3"><span>后端开发</span></li>
+                            <li class="course_li_4"><span>基础知识</span></li>
+                            <li class="course_li_5"><span>云计算&物联网</span></li>
+                            <li class="course_li_6"><span>智能硬件</span></li>
+                            <li class="course_li_7"><span>数据库</span></li>
+                            <li class="course_li_8"><span>认证考试</span></li>
+                            <li class="course_li_9"><span>企业IT</span></li>
+                            <li class="course_li_10"><span>设计&产品&测试</span></li>
+                        </ul>
+                    </div>
+                    <p class="look" style="display: none;">产看全部</p>
+                    <p class="course_p2">职业路径图</p>
+                    <p class="course_p2">知识体系图</p>
+                    <p class="course_p2">系列课程</p>
+                    <p class="course_p2">课程标签</p>
+                </div>
+                <div class="right_content">
+                    <div class="nav_top">
+                        <ul>
+                            <li class="nav_top_li">全部课程</li>
+                            <li class="nav_top_li">最新<i class="i-1"></i>
+                                <ul class="expand_ul">
+                                    <a href="#">
+                                        <li><span>最新</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>最热</span></li>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nav_top_li">课程类型<i class="i-1"></i>
+                                <ul class="expand_ul">
+                                    <a href="#">
+                                        <li><span>VIP</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>免费</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>认证专享</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>全部</span></li>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nav_top_li">内容类型<i class="i-1"></i>
+                                <ul class="expand_ul">
+                                    <a href="#">
+                                        <li><span>知识精讲</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>项目实战</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>全部</span></li>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nav_top_li">难度等级<i class="i-1"></i>
+                                <ul class="expand_ul">
+                                    <a href="#">
+                                        <li><span>初级</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>中级</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>高级</span></li>
+                                    </a>
+                                    <a href="#">
+                                        <li><span>全部</span></li>
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--  bootstrap 字体图标===>无效 -->
+                        <!--  <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> -->
+                        <img src="./jike-img/pic/1.png" class="pic_1">
+                        <img src="./jike-img/pic/2.png" class="pic_2">
+                    </div>
+                    <div class="main_content">
+                        <ul class="list">
+                            <li>
+                                <img src="./jike-img/course/1.png" alt="" class="i_1">
+                                <p class="title1">腾讯云产品 - 游戏云</p>
+                                <p class="description">本课程主要介绍腾讯游戏云相关知识</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" alt="" class="i_2">
+                                <p class="title1">前端开发环境搭建(三种工具任选其一)</p>
+                                <p class="description">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</p>
+                                <p class="class_time">6课时41分钟 初级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" alt="" class="i_3">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                <p class="description">本课程主要是腾讯大咖与大家分享一些技术经验与心得</p>
+                                <p class="class_time">10课时204分钟 高级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" alt="" class="i_4">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                <p class="description">本课程主要是由腾讯大咖为大家分享创业心经。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" alt="" class="i_5">
+                                <p class="title1">腾讯云产品 - 腾讯云通信</p>
+                                <p class="description">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" alt="" class="i_6">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之互动直播</p>
+                                <p class="description">本课程主要为大家讲解SDK集成，iOS集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" alt="" class="i_7">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                <p class="description">本课程手把手教大家快速调用相关SDK。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            ***********************************************************
+                            <li>
+                                <img src="./jike-img/course/1.png" alt="" class="i_1">
+                                <p class="title1">腾讯云产品 - 游戏云</p>
+                                <p class="description">本课程主要介绍腾讯游戏云相关知识</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" alt="" class="i_2">
+                                <p class="title1">前端开发环境搭建(三种工具任选其一)</p>
+                                <p class="description">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</p>
+                                <p class="class_time">6课时41分钟 初级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" alt="" class="i_3">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                <p class="description">本课程主要是腾讯大咖与大家分享一些技术经验与心得</p>
+                                <p class="class_time">10课时204分钟 高级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" alt="" class="i_4">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                <p class="description">本课程主要是由腾讯大咖为大家分享创业心经。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" alt="" class="i_5">
+                                <p class="title1">腾讯云产品 - 腾讯云通信</p>
+                                <p class="description">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" alt="" class="i_6">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之互动直播</p>
+                                <p class="description">本课程主要为大家讲解SDK集成，iOS集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" alt="" class="i_7">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                <p class="description">本课程手把手教大家快速调用相关SDK。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/1.png" alt="" class="i_1">
+                                <p class="title1">腾讯云产品 - 游戏云</p>
+                                <p class="description">本课程主要介绍腾讯游戏云相关知识</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" alt="" class="i_2">
+                                <p class="title1">前端开发环境搭建(三种工具任选其一)</p>
+                                <p class="description">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</p>
+                                <p class="class_time">6课时41分钟 初级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" alt="" class="i_3">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                <p class="description">本课程主要是腾讯大咖与大家分享一些技术经验与心得</p>
+                                <p class="class_time">10课时204分钟 高级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" alt="" class="i_4">
+                                <p class="title1">腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                <p class="description">本课程主要是由腾讯大咖为大家分享创业心经。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" alt="" class="i_5">
+                                <p class="title1">腾讯云产品 - 腾讯云通信</p>
+                                <p class="description">本课程通过实操演示，教大家快速完成SDK集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" alt="" class="i_6">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之互动直播</p>
+                                <p class="description">本课程主要为大家讲解SDK集成，iOS集成。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" alt="" class="i_7">
+                                <p class="title1">腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                <p class="description">本课程手把手教大家快速调用相关SDK。</p>
+                                <p class="class_time">5课时177分钟 中级</p>
+                            </li>
+                        </ul>
+                        <!-- **********************************切换格式*************************** -->
+                        <ul class="square">
+                            <li>
+                                <img src="./jike-img/course/1.png" class="i_1">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 游戏云</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程主要介绍腾讯游戏云相关知识</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" class="i_2">
+                                <div class="square_content">
+                                    <p>前端开发环境搭建(三种工具任选其一)</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" class="i_3">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" class="i_4">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" class="i_5">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之互动直播</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" class="i_6">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" class="i_7">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <!--  ************************************************* -->
+                            <li>
+                                <img src="./jike-img/course/1.png" class="i_1">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 游戏云</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程主要介绍腾讯游戏云相关知识</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" class="i_2">
+                                <div class="square_content">
+                                    <p>前端开发环境搭建(三种工具任选其一)</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" class="i_3">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" class="i_4">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" class="i_5">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之互动直播</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" class="i_6">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" class="i_7">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/1.png" class="i_1">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 游戏云</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程主要介绍腾讯游戏云相关知识</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" class="i_2">
+                                <div class="square_content">
+                                    <p>前端开发环境搭建(三种工具任选其一)</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" class="i_3">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" class="i_4">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" class="i_5">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之互动直播</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" class="i_6">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/7.png" class="i_7">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/1.png" class="i_1">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 游戏云</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程主要介绍腾讯游戏云相关知识</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/2.png" class="i_2">
+                                <div class="square_content">
+                                    <p>前端开发环境搭建(三种工具任选其一)</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/3.png" class="i_3">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之技术交流</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/4.png" class="i_4">
+                                <div class="square_content">
+                                    <p>腾讯大咖分享 - 腾讯大咖分享之创业心经</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/5.png" class="i_5">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之互动直播</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./jike-img/course/6.png" class="i_6">
+                                <div class="square_content">
+                                    <p>腾讯云产品 - 腾讯视频云之直播LVB</p>
+                                    <p class="square_content_2">
+                                        <span class="discription_1">本课程介绍常用前端开发工具 Sublime Text / Dreamweaver / WebStorm 的安装与使用技巧</span>
+                                        <br>
+                                        <span class="discription_2">5课时177分钟</span>
+                                        <br>
+                                        <span>中级</span>
+                                        <br>
+                                    </p>
+                                    <p class="square_time">5课时177分钟</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  <ul id="demoContent"></ul> -->
+                    <ul class="page" id="page">
+                        <li class="pageItemDisable" page-data="1" page-rel="firstpage">首页</li>
+                        <li class="pageItemDisable" page-data="0" page-rel="prepage">上一页</li>
+                        <li class="pageItemActive" page-data="1" page-rel="itempage">1</li>
+                        <li class="pageItem" page-data="2" page-rel="itempage">2</li>
+                        <li class="pageItem" page-data="3" page-rel="itempage">3</li>
+                        <li class="pageItem" page-data="3" page-rel="itempage">4</li>
+                        <li class="pageItem" page-data="3" page-rel="itempage">5</li>
+                        <li class="pageItem" page-data="3" page-rel="itempage">6</li>
+                        <li class="pageItem" page-data="3" page-rel="itempage">7</li>
+                        <li> <span>...</span></li>
+                        <li class="pageItem" page-data="2" page-rel="nextpage">下一页</li>
+                        <li class="pageItem" page-data="11" page-rel="lastpage">尾页</li>
+                        <span class="pageSpan">共95页&nbsp&nbsp&nbsp当前</span>
+                        <input type="text" style="width: 15px" value="1">
+                        <span class="pageSpan">页</span>
+                        <input class="pageButton" type="button" value="确定">
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <!-- 底部 -->
+        <footer>
+            <!-- 底部 -->
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="jike-img/jk-logo-footer.png" alt="极客学院" width="115px" height="40px">
+                    <p>极客学院，编程是一种信仰！</p>
+                </div>
+                <div class="jike-list">
+                    <dl>
+                        <dt>职业学院</dt>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/zhiye/web" target="_blank">Web前端工程师</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/zhiye/python" target="_blank">Python Web工程师</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/zhiye/go" target="_blank">Go语言工程师</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/zhiye/ios" target="_blank">ios工程师</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>会员课程</dt>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/course/" target="_blank">课程库</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/path/" target="_blank">知识体系图</a>
+                        </dd>
+                        <dd>
+                            <a href="http://ke.jikexueyuan.com/zhiye/" target="_blank">职业路径图</a>
+                        </dd>
+                        <dd>
+                            <a href="http://ke.jikexueyuan.com/xilie/" target="_blank">系列课程</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/tag/" target="_blank">课程标签</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>极客社区</dt>
+                        <dd>
+                            <a href="http://wenda.jikexueyuan.com/" target="_blank">技术问答</a>
+                        </dd>
+                        <dd>
+                            <a href="http://wiki.jikexueyuan.com/" target="_blank">wiki</a>
+                        </dd>
+                        <dd>
+                            <a href="http://download.jikexueyuan.com/" target="_blank">资源下载</a>
+                        </dd>
+                        <dd>
+                            <a href="http://qun.jikexueyuan.com/" target="_blank">社群</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>其他</dt>
+                        <dd>
+                            <a href="http://help.jikexueyuan.com/" target="_blank">关于我们</a>
+                        </dd>
+                        <dd>
+                            <a href="http://help.jikexueyuan.com/guide/" target="_blank">使用指南</a>
+                        </dd>
+                        <dd>
+                            <a href="http://help.jikexueyuan.com/join.html" target="_blank">加入我们</a>
+                        </dd>
+                        <dd>
+                            <a href="http://help.jikexueyuan.com/contact.html" target="_blank">联系我们</a>
+                        </dd>
+                        <dd>
+                            <a href="http://www.jikexueyuan.com/friendlink.html" target="_blank">友情链接</a>
+                        </dd>
+                    </dl>
+                    <div class="download">
+                        <p class="hot-tel">服务热线：400-678-8266</p>
+                        <a href="" class="ios">
+                            <img src="jike-img/down-ios.png" alt="下载二维码">
+                            <img src="jike-img/app.png" alt="" class="iphone1">
+                        </a>
+                        <a href="" class="android0">
+                            <img src="jike-img/down-android.png" alt="下载二维码">
+                            <img src="jike-img/app (1).png" alt="" class="android">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  <hr class="hr"> -->
+            <div class="footer-botton">
+                <p class="banquan"><b> Copyright © 2013-2016 jikexueyuan.com All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210</b>
+                </p>
+                <div class="smell-weiboweixin"> <img src="jike-img/weibo.png" alt="">
+                    <img src="jike-img/微信s.png" alt="微信"></div>
+                <div class="fix-3">
+                    <ul>
+                        <li class="goto">
+                            <!--  javaScript:;空链接 -->
+                            <a href="javaScript:;"><img class="fix-3-li-img" id="toptop" src="jike-img/return.png" alt="返回顶部"></a>
+                            <!--  <a href="javaScript:;"><img src="jike-img/gotop.png" alt="" class="go-top"></a> -->
+                        </li>
+                        <li class="sb">
+                            <a href=""><img class="fix-3-li-img" src="jike-img/phone.png" alt="" id="img2"></a>
+                            <img class="fix-3-2" src="jike-img/二维码.png" alt="">
+                        </li>
+                        <li>
+                            <a href=""><img class="fix-3-li-img" src="jike-img/0f000KgpXJ8j8WftMJ-UZf.jpg" title="极客学院官方微信" alt="极客学院官方微信"></a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="last-img" src="jike-img/footer cert.png" alt="" />
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/page.js"></script>
+    <script src="./js/class_Library.js"></script>
+</body>
+
+</html>
